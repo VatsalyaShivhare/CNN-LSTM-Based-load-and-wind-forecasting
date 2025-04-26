@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 import os
-from tensorflow.keras.models import Sequential, save_model, load_model
-from tensorflow.keras.layers import Conv1D, LSTM, Dense, Dropout, BatchNormalization
+from tensorflow.keras.models import Sequential, save_model, load_model #type: ignore
+from tensorflow.keras.layers import Conv1D, LSTM, Dense, Dropout, BatchNormalization #type: ignore
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 import matplotlib.pyplot as plt

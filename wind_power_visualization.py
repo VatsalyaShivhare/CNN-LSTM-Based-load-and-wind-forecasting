@@ -62,7 +62,7 @@ def plot_hourly_heatmap(predictions, save_dir):
             daily_data = np.reshape(usable_predictions, (n_days, 24))
             
             plt.figure(figsize=(12, 8))
-            sns.heatmap(daily_data, cmap='YlOrRd', xticklabels=range(24))
+            sns.heatmap(daily_data, cmap='YlOrRd', xticklabels=[str(i) for i in range(24)])
             plt.title('Hourly Wind Power Heatmap')
             plt.xlabel('Hour of Day')
             plt.ylabel('Day')
